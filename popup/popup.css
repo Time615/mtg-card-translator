@@ -1,1 +1,43 @@
-/* popup styling */
+body {
+  font-family: sans-serif;
+  width: 250px;
+  padding: 15px;
+  background: #f9f9f9;
+  color: #333;
+}
+
+h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.setting {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+select {
+  width: 140px;
+  padding: 4px;
+}
+
+.switch-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.switch {
+  transform: scale(1.2);
+  margin-left: 10px;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.75em;
+  color: #888;
+}
