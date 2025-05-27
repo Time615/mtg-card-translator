@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "MTGカード翻訳機",
+  "version": "1.0",
+  "description": "Webページ上のMTGカード名を日本語訳に置き換える拡張機能。",
+  "permissions": ["storage"],
+  "host_permissions": ["https://api.scryfall.com/"],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+// load settings from chrome.storage
